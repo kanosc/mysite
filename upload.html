@@ -1,0 +1,8 @@
+<div class="modal-body">
+	请选择需要上传的文件（支持多选）
+	<form id="upload-form" action="/api/file/v1/testdir" method="POST" enctype="multipart/form-data" >
+		<input class="form-control" type="file" name="upload" id="file-input" multiple />
+		<hr>
+		<input type="submit" value="上传" />
+	</form>
+</div>
