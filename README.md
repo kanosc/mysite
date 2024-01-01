@@ -7,4 +7,6 @@
 + 随机壁纸
 + 文件系统（公共网盘）
 + 聊天室
++ ...敬请期待
 ## 项目效果
+![show page](https://github.com/kanosc/mysite/blob/main/show_project/show_1.PNG)
