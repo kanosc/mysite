@@ -3,7 +3,7 @@ import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 const password = ref('')
 const password2 = ref('')
-const pwdForm = ref(null)
+const signupForm = ref(null)
 
 const router = useRouter()
 const keySignUp = async () => {
@@ -33,8 +33,8 @@ const keySignUp = async () => {
 <template>
     <div class="login-wrap">
         <main class="form-signin w-100 mx-auto">
-            <form action="/#" method="post" @submit.prevent="keySignUp()" ref="pwdForm">
-                <h1 class="h3 mb-3 fw-normal">Sign Up For Password Manager</h1>
+            <form action="/#" method="post" @submit.prevent="keySignUp()" ref="signupForm">
+                <h1 class="h3 mb-3 fw-normal">Sign Up(注册)</h1>
                 <!-- <label for="inputid" class="form-label">{{ props.option }}</label> -->
                 <label for="t-name" class="form-label">email</label>
                 <input type="email" id="t-name" class="form-control" name="email" v-model="username"
