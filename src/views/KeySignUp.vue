@@ -35,6 +35,7 @@ const keySignUp = async () => {
         <main class="form-signin w-100 mx-auto">
             <form action="/#" method="post" @submit.prevent="keySignUp()" ref="signupForm">
                 <!-- <label for="inputid" class="form-label">{{ props.option }}</label> -->
+                <h1>Sign Up</h1>
                 <label for="t-name" class="form-label">email</label>
                 <input type="email" id="t-name" class="form-control" name="email" v-model="username"
                     placeholder="name@example.com">
