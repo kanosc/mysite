@@ -33,8 +33,16 @@
           <li class="nav-item">
             <AppLink class="nav-link" to="/chatrooms">聊天室</AppLink>
           </li>
-          <li class="nav-item">
-            <AppLink class="nav-link" to="https://glassysky.cn/ui/vault">密码管理器</AppLink>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">密码管理器</a>
+            <ul class="dropdown-menu">
+              <li>
+                <AppLink class="dropdown-item" to="/keysignup">sign up</AppLink>
+              </li>
+              <li>
+                <AppLink class="dropdown-item" to="https://glassysky.cn/ui/vault">key manager</AppLink>
+              </li>
+            </ul>
           </li>
         </ul>
         <form role="search">

@@ -17,7 +17,8 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 dist/
-testdir/
+testdir/*
+node_modules/
 
 # Go workspace file
 go.work

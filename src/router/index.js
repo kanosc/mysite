@@ -41,6 +41,11 @@ const routes = [
             requiresUsername: true
         }
     },
+    {
+        path: '/keysignup',
+        name: 'keysignup',
+        component: () => import('../views/KeySignUp.vue'),
+    },
     { path: '/fortune', name: 'Fortune', component: () => import('../views/FortuneCard.vue') },
     {
         path: '/:pathMatch(.*)*',
