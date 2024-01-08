@@ -42,8 +42,8 @@ const keySignUp = async () => {
                 <input type="password" id="t-pwd" class="form-control" name="password" v-model="password">
                 <label for="t-pwd2" class="form-label">please input password again</label>
                 <input type="password" id="t-pwd2" class="form-control" name="password2" v-model="password2">
-                <span class="text-danger">Notice: system will not collect your password, please remember or put it in secure
-                    place.</span>
+                <!-- <span class="text-danger">Notice: system will not collect your password, please remember or put it in secure
+                    place.</span> -->
 
                 <button class="w-100 btn btn-lg btn-dark mt-3" type="submit">Sign Up</button>
                 <p class="mt-3 mb-3 text-muted">&copy; 2023–2028</p>
