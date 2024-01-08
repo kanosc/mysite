@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"net/http"
 	"os"
-	"runtime/debug"
+	// "runtime/debug"
 	"strconv"
 	"time"
 
@@ -22,22 +22,23 @@ import (
 
 var clientKeyCache = freecache.NewCache(100 * 1024 * 1024)
 
-func init() {
-	debug.SetGCPercent(20)
-	os.Setenv("service_name", "key_management_service")
-	err := database.InitKmsDatabase()
-	if err != nil {
-		panic(err.Error())
-	}
-	err = database.CreateAllTables()
-	if err != nil {
-		panic(err.Error())
-	}
+/*
+	func init() {
+		debug.SetGCPercent(20)
+		os.Setenv("service_name", "key_management_service")
+		err := database.InitKmsDatabase()
+		if err != nil {
+			panic(err.Error())
+		}
+		err = database.CreateAllTables()
+		if err != nil {
+			panic(err.Error())
+		}
 
-	InitRootKey()
-	InitEncKey()
-}
-
+		InitRootKey()
+		InitEncKey()
+	}
+*/
 type UserKey struct {
 	KeyType    string
 	KeyId      string

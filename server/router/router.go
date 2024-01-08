@@ -61,11 +61,13 @@ func initMicroServiceRouter() {
 		chatRoute.POST("/auth/:roomname", service.AuthToken)
 	}
 
+	/*
 	kmsRoute := r.Group("/api/kms/v1/")
 	{
 		kmsRoute.GET("/:keyid", service.KeyOperationAuth(), service.KeyRequestChecker(), service.HandleGetClientKeyById)
 		kmsRoute.POST("/:clientid/key", service.KeyCreateRateLimiter(20), service.KeyOperationAuth(), service.HandleCreateClientKey)
 	}
+	*/
 
 }
 
