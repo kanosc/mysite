@@ -38,9 +38,9 @@ const keySignUp = async () => {
                 <label for="t-name" class="form-label">email</label>
                 <input type="email" id="t-name" class="form-control" name="email" v-model="username"
                     placeholder="name@example.com">
-                <label for="t-pwd" class="form-label">password for new account</label>
+                <label for="t-pwd" class="form-label mt-2">password for new account</label>
                 <input type="password" id="t-pwd" class="form-control" name="password" v-model="password">
-                <label for="t-pwd2" class="form-label">please input password again</label>
+                <label for="t-pwd2" class="form-label mt-2">input password again</label>
                 <input type="password" id="t-pwd2" class="form-control" name="password2" v-model="password2">
                 <!-- <span class="text-danger">Notice: system will not collect your password, please remember or put it in secure
                     place.</span> -->
