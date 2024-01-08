@@ -34,7 +34,6 @@ const keySignUp = async () => {
     <div class="login-wrap">
         <main class="form-signin w-100 mx-auto">
             <form action="/#" method="post" @submit.prevent="keySignUp()" ref="signupForm">
-                <h1 class="h3 mb-3 fw-normal">Sign Up(注册)</h1>
                 <!-- <label for="inputid" class="form-label">{{ props.option }}</label> -->
                 <label for="t-name" class="form-label">email</label>
                 <input type="email" id="t-name" class="form-control" name="email" v-model="username"
