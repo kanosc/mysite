@@ -33,6 +33,9 @@
           <li class="nav-item">
             <AppLink class="nav-link" to="/chatrooms">聊天室</AppLink>
           </li>
+          <li class="nav-item">
+            <AppLink class="nav-link" to="https://glassysky.cn/ui/vault">密码管理器</AppLink>
+          </li>
         </ul>
         <form role="search">
           <input class="form-control" type="search" placeholder="Search" aria-label="Search">
